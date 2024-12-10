@@ -1,0 +1,109 @@
+C# é uma linguagem de programação orientada a objetos. Na metodologia de Programação Orientada a Objetos, um programa consiste em vários objetos que interagem entre si por meio de ações. As ações que um objeto pode tomar são chamadas de métodos. Objetos do mesmo tipo são ditos como tendo o mesmo tipo ou, são ditos como estando na mesma classe.
+
+Por exemplo, vamos considerar um objeto Rectangle. Ele tem atributos como comprimento e largura. Dependendo do design, ele pode precisar de maneiras de aceitar os valores desses atributos, calcular a área e exibir detalhes.
+
+Vamos dar uma olhada na implementação de uma classe Rectangle e discutir a sintaxe básica do C# −
+
+Demonstração ao vivo
+using System;
+
+namespace RectangleApplication {
+   class Rectangle {
+      
+      // member variables
+      double length;
+      double width;
+      
+      public void Acceptdetails() {
+         length = 4.5;    
+         width = 3.5;
+      }
+      public double GetArea() {
+         return length * width; 
+      }
+      public void Display() {
+         Console.WriteLine("Length: {0}", length);
+         Console.WriteLine("Width: {0}", width);
+         Console.WriteLine("Area: {0}", GetArea());
+      }
+   }
+   class ExecuteRectangle {
+      static void Main(string[] args) {
+         Rectangle r = new Rectangle();
+         r.Acceptdetails();
+         r.Display();
+         Console.ReadLine(); 
+      }
+   }
+}
+Quando o código acima é compilado e executado, ele produz o seguinte resultado:
+
+Length: 4.5
+Width: 3.5
+Area: 15.75
+A palavra-chave using
+A primeira declaração em qualquer programa C# é
+
+using System;
+A palavra-chave using é usada para incluir os namespaces no programa. Um programa pode incluir várias instruções using.
+
+Ezóico
+A palavra-chave da classe
+A palavra-chave class é usada para declarar uma classe.
+
+Aprenda C# a fundo com projetos do mundo real por meio do nosso curso de certificação C# . Inscreva-se e torne-se um especialista certificado para impulsionar sua carreira.
+
+Comentários em C#
+Comentários são usados ​​para explicar o código. Os compiladores ignoram as entradas de comentários. Os comentários multilinha em programas C# começam com /* e terminam com os caracteres */, conforme mostrado abaixo −
+
+/* This program demonstrates
+The basic syntax of C# programming 
+Language */
+Comentários de linha única são indicados pelo símbolo '//'. Por exemplo,
+
+}//end class Rectangle    
+Ezóico
+Variáveis ​​de Membro
+Variáveis ​​são atributos ou membros de dados de uma classe, usados ​​para armazenar dados. No programa anterior, a classe Rectangle tem duas variáveis ​​de membro chamadas length e width .
+
+Funções de Membro
+Funções são conjuntos de instruções que realizam uma tarefa específica. As funções membro de uma classe são declaradas dentro da classe. Nossa classe de exemplo Rectangle contém três funções membro: AcceptDetails , GetArea e Display .
+
+Ezóico
+Instanciando uma classe
+No programa anterior, a classe ExecuteRectangle contém o método Main() e instancia a classe Rectangle .
+
+Identificadores
+Um identificador é um nome usado para identificar uma classe, variável, função ou qualquer outro item definido pelo usuário. As regras básicas para nomear classes em C# são as seguintes:
+
+Um nome deve começar com uma letra que pode ser seguida por uma sequência de letras, dígitos (0 - 9) ou sublinhado. O primeiro caractere em um identificador não pode ser um dígito.
+
+Não deve conter nenhum espaço ou símbolo incorporado, como? - + ! @ # % ^ & * ( ) [ ] { } . ; : " ' / e \. No entanto, um sublinhado ( _ ) pode ser usado.
+
+Não deve ser uma palavra-chave C#.
+
+Palavras-chave C#
+Palavras-chave são palavras reservadas predefinidas para o compilador C#. Essas palavras-chave não podem ser usadas como identificadores. No entanto, se você quiser usar essas palavras-chave como identificadores, você pode prefixar a palavra-chave com o caractere @.
+
+Em C#, alguns identificadores têm um significado especial no contexto do código, como get e set, que são chamados de palavras-chave contextuais.
+
+A tabela a seguir lista as palavras-chave reservadas e contextuais em C# −
+
+Palavras-chave reservadas
+resumo	como	base	bool	quebrar	byte	caso
+pegar	Caracteres	verificado	aula	constante	continuar	decimal
+padrão	delegar	fazer	dobro	outro	enumeração	evento
+explícito	externo	falso	finalmente	fixo	flutuador	para
+para cada	Vá para	se	implícito	em	em (modificador genérico)	Inteiro
+interface	interno	é	trancar	longo	espaço de nomes	novo
+nulo	objeto	operador	fora	fora (modificador genérico)	substituir	parâmetros
+privado	protegido	público	somente leitura	referência	retornar	sbyte
+selado	curto	tamanho de	empilhar alocação	estático	corda	estrutura
+trocar	esse	lançar	verdadeiro	tentar	tipo de	unidade
+ulong	não verificado	inseguro	curto	usando	virtual	vazio
+volátil	enquanto					
+Palavras-chave contextuais
+adicionar	pseudônimo	ascendente	descendente	dinâmico	de	pegar
+global	grupo	em	juntar	deixar	ordenar por	parcial (tipo)
+parcial
+(método)	remover	selecionar	definir
